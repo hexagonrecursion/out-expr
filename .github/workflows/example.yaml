@@ -6,4 +6,4 @@ jobs:
     steps:
     - run: ( echo -n 'example=${'; echo -n '{ 1 + 2 }'; echo '}' ) >> "$GITHUB_OUTPUT"
       id: example
-    - run: echo ${{ steps.example.outputs.example }}
+    - run: echo '${{ steps.example.outputs.example }}'
